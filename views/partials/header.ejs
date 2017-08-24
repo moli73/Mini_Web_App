@@ -1,15 +1,17 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <title>YelpCamp</title>
+            <title>MomentS</title>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
             <link rel="stylesheet" href="/stylesheets/main.css"></link>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
         </head>    
         <body>
             <nav class="navbar navbar-default">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="/">YelpCamp</a>
+                        <a class="navbar-brand" href="/"><i class="fa fa-eercast" aria-hidden="true"></i> MomentS</a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -17,8 +19,8 @@
                                 <li><a href="/login">Log In</a></li>
                                 <li><a href="/register">Sign Up</a></li>                            
                             <% } else { %>
-                                <li><a href="#"><%= currentUser.username%></li></a>
-                                <li><a href="/logout">Log Out</a></li>
+                                <li><a href="#"><%= currentUser.username%> <i class="fa fa-user-o" aria-hidden="true"></i></li></a>
+                                <li><a href="/logout">| Log Out</a></li>
                             <% } %>
                             
                         </ul>
